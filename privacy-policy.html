@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PelvicCare — Privacy Policy</title>
+  <style>
+    :root {
+      --teal: #0F9D91;
+      --navy: #143A59;
+      --bg: #F6FAFC;
+      --card: #FFFFFF;
+      --text: #1B2A38;
+      --border: #D9E6EC;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px 16px 48px;
+    }
+    .container { max-width: 760px; margin: 0 auto; }
+    .header {
+      background: linear-gradient(135deg, var(--navy), var(--teal));
+      color: #fff;
+      padding: 28px 24px;
+      border-radius: 18px;
+      margin-bottom: 20px;
+    }
+    .header h1 { margin: 0 0 6px; font-size: 1.65rem; }
+    .header p { margin: 0; opacity: 0.92; font-size: 0.95rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+      margin-bottom: 16px;
+    }
+    h2 { margin-top: 0; color: var(--navy); font-size: 1.15rem; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>PelvicCare Privacy Policy</h1>
+      <p>Effective Date: November 2026 &bull; Local-First Wellness &amp; Optional Private Cloud Sync</p>
+    </header>
+
+    <section class="card">
+      <h2>1. Overview</h2>
+      <p>
+        PelvicCare is a local-first pelvic floor exercise and bladder diary companion app. All core features work
+        offline on your device without creating an account. You may optionally sign in with Google to synchronize
+        your records across devices using Google Firebase (Firebase Authentication and Cloud Firestore).
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>2. Information Collected &amp; Stored</h2>
+      <ul>
+        <li><strong>Health &amp; Wellness Records (User-Entered):</strong> Guided exercise sessions (timestamps, duration, repetitions, hold/relax timing, plan level) and bladder diary logs (urination/fluid intake amounts, beverage types, urgency levels 0–4, leakage episodes and severity, nighttime urination flags, and optional personal notes).</li>
+        <li><strong>Reminder Schedules &amp; Preferences:</strong> Reminder times, repeat weekdays, optional display name, active plan, custom exercise settings, fluid units (ml/fl oz), audio cue settings, and language choice.</li>
+        <li><strong>Optional Google Account Data:</strong> Collected only if you tap <em>Sign in with Google</em> — Google account email address, display name, and Firebase user identifier (UID).</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>3. Storage, Security &amp; Backup Protections</h2>
+      <ul>
+        <li><strong>Offline by Default:</strong> When you do not sign in, all records stay strictly in your device's private app storage.</li>
+        <li><strong>Android Backup Exclusion:</strong> Sensitive local databases and preference files are excluded from Android Auto Backup and device-to-device backups.</li>
+        <li><strong>Encrypted Cloud Sync (Optional):</strong> When signed in with Google, records are transmitted over HTTPS/TLS to Google Cloud Firestore and protected by strict per-user owner-only security rules.</li>
+        <li><strong>No Ads, No Tracking SDKs:</strong> PelvicCare contains zero advertisements, no advertising ID collection, and no third-party analytics SDKs.</li>
+        <li><strong>PII-Free Diagnostics:</strong> Production diagnostic logs exclude email addresses, display names, photo URLs, and raw user IDs.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4. Sharing &amp; Exports</h2>
+      <p>
+        We never sell or share your personal or health data with advertisers or data brokers. Health summary reports
+        (.txt / .csv) are generated locally on your device and leave the device only when you explicitly share them
+        through Android's system Share sheet.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>5. Deleting Your Data &amp; Account</h2>
+      <ul>
+        <li><strong>Clear All Data (In-App):</strong> Permanently deletes all exercise sessions, bladder diary entries, reminders, and scheduled alarms/notifications locally and in Cloud Firestore (when signed in), while keeping your optional Google Sign-In link.</li>
+        <li><strong>Delete Account (In-App):</strong> Permanently deletes all Firestore sessions, diary entries, reminders, your Firestore profile, your Firebase Authentication account, and all local data, preferences, and scheduled notifications.</li>
+        <li><strong>External Deletion Without Reinstalling:</strong> See our <a href="./account-deletion.html">Account &amp; Cloud Data Deletion page</a> or email <a href="mailto:pelviccare.support@gmail.com?subject=PelvicCare%20Account%20Deletion%20Request"><strong>pelviccare.support@gmail.com</strong></a> with subject <em>PelvicCare Account Deletion Request</em> from your signed-in Google email address.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>6. Contact &amp; Technical Support</h2>
+      <p>
+        For privacy questions, external account deletion requests, or technical support, please contact our official developer support email:
+        <a href="mailto:pelviccare.support@gmail.com?subject=PelvicCare%20Support"><strong>pelviccare.support@gmail.com</strong></a>.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
